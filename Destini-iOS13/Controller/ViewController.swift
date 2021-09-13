@@ -32,6 +32,35 @@ class ViewController: UIViewController {
     }
 }
 
+// OPCION 2 - USANDO DICCIONARIO
+/*
+import UIKit
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var lblHistoria: UILabel!
+    @IBOutlet weak var btnoChoice1: UIButton!
+    @IBOutlet weak var btnoChoice2: UIButton!
+    
+    var storyBrain = StoryBrain()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateUI()
+    }
+    
+    @IBAction func btn_choices(_ sender: UIButton) {
+        storyBrain.checkChoide(sender.tag)
+        updateUI()
+    }
+    
+    func updateUI() {
+        lblHistoria.text = storyBrain.getHistory()
+        btnoChoice1.setTitle(storyBrain.getTextChoice()[0], for: .normal)
+        btnoChoice2.setTitle(storyBrain.getTextChoice()[1], for: .normal)
+    }
+}
+*/
 
 
 
